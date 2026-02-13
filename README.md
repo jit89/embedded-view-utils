@@ -1,3 +1,9 @@
+![Build Status](https://github.com/jit89/embedded-view-utils/actions/workflows/compile-test.yml/badge.svg)
+[Latest Release](https://img.shields.io/github/v/release/jit89/embedded-view-utils?color=blue)
+[ ![License](https://img.shields.io/badge/license-MIT-green) ](LICENSE)
+
+A zero-copy utility library for Arduino and microcontrollers.
+
 ## MemoryView & StringView
 
 A fast, Zero-Copy Data Handling Library for Embedded C++. A lightweight toolkit for safe binary casting and non-destructive tokenization, designed to make parsing strings easier without the overhead of the standard Arduino String class.
