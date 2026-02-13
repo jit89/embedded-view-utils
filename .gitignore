@@ -1,0 +1,6 @@
+# .gitignore
+.pio/
+build/
+*.hex
+*.bin
+*.elf
