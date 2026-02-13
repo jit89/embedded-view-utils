@@ -31,4 +31,4 @@ jobs:
           # We tell the CLI to include the root directory as a library
           arduino-cli compile --fqbn ${{ matrix.board }} \
             --library . \
-            tests/ViewUtilsTests/ViewUtilsTests.ino
+            tests/ViewTests/ViewTests.ino
