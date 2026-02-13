@@ -1,0 +1,34 @@
+#######################################
+# Syntax Coloring Map For ViewUtils
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+MemoryView	KEYWORD1
+StringView	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+data	KEYWORD2
+length	KEYWORD2
+isEmpty	KEYWORD2
+sizeBytes	KEYWORD2
+slice	KEYWORD2
+indexOf	KEYWORD2
+contains	KEYWORD2
+castTo	KEYWORD2
+equals	KEYWORD2
+startsWith	KEYWORD2
+trim	KEYWORD2
+nextToken	KEYWORD2
+toLong	KEYWORD2
+toFloat	KEYWORD2
+toString	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
