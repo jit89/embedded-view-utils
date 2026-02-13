@@ -1,5 +1,5 @@
 #include <AUnit.h>
-#include "view_utils.h"
+#include "Views.h"
 
 // --- MemoryView Tests ---
 
