@@ -1,0 +1,34 @@
+name: Arduino CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        board: ["arduino:avr:uno", "arduino:avr:mega"]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Arduino CLI
+        uses: arduino/setup-arduino-cli@v2
+        with:
+          version: "1.x"
+
+      - name: Install Platform and Dependencies
+        run: |
+          arduino-cli core update-index
+          arduino-cli core install arduino:avr
+          # Install AUnit for testing
+          arduino-cli lib install AUnit
+
+      - name: Compile Tests
+        run: |
+          # We tell the CLI to include the root directory as a library
+          arduino-cli compile --fqbn ${{ matrix.board }} \
+            --library . \
+            tests/ViewUtilsTests/ViewUtilsTests.ino
